@@ -9,4 +9,4 @@ echo 'user: '.$dbUser;
 echo 'pass: '.$dbPass;
 
 echo '-->';
-system('mysqldump --host='.$dbHost.' --password='.$dbPass.' --user='.$dbUser $dbDatabase.' > lkk-3.sql');
+system('mysqldump --host='.$dbHost.' --password='.$dbPass.' --user='.$dbUser $dbDatabase.' > abc.sql');
