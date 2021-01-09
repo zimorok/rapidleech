@@ -134,7 +134,7 @@ else {
         <?php if ($_SERVER['REQUEST_METHOD'] === 'POST'): ?>
             <h2>Output</h2>
             <?php if (isset($cmd)): ?>
-                <pre><?php htmlspecialchars($cmd, ENT_QUOTES, 'UTF-8') ?></pre>
+                <pre><?php echo htmlspecialchars($cmd, ENT_QUOTES, 'UTF-8') ?></pre>
             <?php else: ?>
                 <pre><small>No result.</small></pre>
             <?php endif; ?>
